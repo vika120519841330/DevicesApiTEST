@@ -30,6 +30,10 @@ namespace DevicesApi.Controllers
         {
             return idivrep.ShowAllDevices();
         }
+
+        [HttpGet]
+        [Route("{id:int}")]
+
         public Device GetDevice(int id)
         {
             var div = idivrep.GetDevice(id);
