@@ -13,16 +13,16 @@ namespace DevicesApi.Controllers
     {
         private IDeviceRepository idivrep;
         //т.к. контейнер Ninject подключить не удается - если получится - раскомментировать
-        //public DeviceController(IDeviceRepository idrep)
-        //{
-        //    idivrep = idrep;
-        //}
+        public DeviceController(IDeviceRepository idrep)
+        {
+            idivrep = idrep;
+        }
 
         //т.к. контейнер Ninject подключить не удается - если получится - закомментировать
-        public DeviceController()
-        {
-            idivrep = new DeviceRepository();
-        }
+        //public DeviceController()
+        //{
+        //    idivrep = new DeviceRepository();
+        //}
 
         [HttpGet]
         [Route("")]

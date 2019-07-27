@@ -7,7 +7,7 @@ namespace ONIONv3.Infrastructure.Data
 {
     public class MyContext : DbContext
     {
-        public MyContext() : base("MyDB")
+        public MyContext() : base("MyContext")
         {
             Database.SetInitializer<MyContext>(new MyInitializer());
         }

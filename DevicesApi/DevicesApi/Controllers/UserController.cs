@@ -15,16 +15,16 @@ namespace DevicesApi.Controllers
         private IUserRepository iuserrep;
 
         //т.к. контейнер Ninject подключить не удается - если получится - раскомментировать
-        //public UserController(IUserRepository iusr)
-        //{
-        //    iuserrep = iusr;
-        //}
+        public UserController(IUserRepository iusr)
+        {
+            iuserrep = iusr;
+        }
 
         //т.к. контейнер Ninject подключить не удается - если получится - закомментировать
-        public UserController()
-        {
-            iuserrep = new UserRepository();
-        }
+        //public UserController()
+        //{
+        //    iuserrep = new UserRepository();
+        //}
 
         [HttpGet]
         [Route("")]
@@ -38,6 +38,13 @@ namespace DevicesApi.Controllers
         [Route("{id:int}")]
         public User GetUser(int id)
         {
+            var user = iuserrep.GetUser(id);
+
+            if (user == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+
             return iuserrep.GetUser(id);
         }
 
