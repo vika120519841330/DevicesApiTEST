@@ -32,6 +32,12 @@ namespace DevicesApi.Controllers
         }
         public Device GetDevice(int id)
         {
+            var div = idivrep.GetDevice(id);
+
+            if (div == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
             return idivrep.GetDevice(id);
         }
 
