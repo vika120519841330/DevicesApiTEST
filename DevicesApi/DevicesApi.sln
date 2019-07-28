@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domein", "Domein", "{52F604
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevicesApi.Domain.Core", "DevicesApi.Domain.Core\DevicesApi.Domain.Core.csproj", "{342F63C8-E216-4110-A2A0-41E61E7F0DF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceApi.Domain.Interfaces", "DeviceApi.Domain.Interfaces\DeviceApi.Domain.Interfaces.csproj", "{AC330DC5-C628-42DE-AA30-B8ED003291CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevicesApi.Domain.Interfaces", "DeviceApi.Domain.Interfaces\DevicesApi.Domain.Interfaces.csproj", "{AC330DC5-C628-42DE-AA30-B8ED003291CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4961730B-EC8D-4C0D-99B7-5C1FE27ACA38}"
 EndProject

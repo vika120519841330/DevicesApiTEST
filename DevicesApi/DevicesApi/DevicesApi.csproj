@@ -138,9 +138,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DeviceApi.Domain.Interfaces\DeviceApi.Domain.Interfaces.csproj">
+    <ProjectReference Include="..\DeviceApi.Domain.Interfaces\DevicesApi.Domain.Interfaces.csproj">
       <Project>{AC330DC5-C628-42DE-AA30-B8ED003291CF}</Project>
-      <Name>DeviceApi.Domain.Interfaces</Name>
+      <Name>DevicesApi.Domain.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\DevicesApi.Domain.Core\DevicesApi.Domain.Core.csproj">
       <Project>{342F63C8-E216-4110-A2A0-41E61E7F0DF2}</Project>

@@ -141,9 +141,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DeviceApi.Domain.Interfaces\DeviceApi.Domain.Interfaces.csproj">
+    <ProjectReference Include="..\DeviceApi.Domain.Interfaces\DevicesApi.Domain.Interfaces.csproj">
       <Project>{ac330dc5-c628-42de-aa30-b8ed003291cf}</Project>
-      <Name>DeviceApi.Domain.Interfaces</Name>
+      <Name>DevicesApi.Domain.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\DevicesApi.Domain.Core\DevicesApi.Domain.Core.csproj">
       <Project>{342F63C8-E216-4110-A2A0-41E61E7F0DF2}</Project>
